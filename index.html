@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPIR - XPixel Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HYPIR</span>
+            </div>
+            <div class="nav-menu">
+                <a href="https://supir.suppixel.ai/home">产品</a>
+                <a href="https://github.com/XPixelGroup/HYPIR">Github</a>
+                <a href="https://github.com/chrislian/hypir.github.io/releases/tag/paper/HYPIR.pdf">论文</a>
+                <a href="https://xpixel.group/">团队介绍</a>
+                <button id="lang-toggle" class="lang-toggle-btn">
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-main">HYPIR</span>
+                </h1>
+                <p class="hero-subtitle">
+                    极速运算，前沿性能，迈向未来的图像修复技术。
+
+                </p>
+                <p class="hero-description">
+                    通过文本驱动的个性化修复——直观、灵活，可根据你的设置进行处理。
+
+                </p>
+            </div>
+            <!-- 添加拉杆对比图 -->
+            <div class="hero-demo">
+                <div class="demo-container">
+                    <div class="image-comparison-container">
+                        <div class="image-comparison" data-comparison="hero">
+                            <div class="comparison-image before-image">
+                                <img src="./图片15.webp" alt="Low quality hero image" />
+                                <span class="image-label">修复前
+                                </span>
+                            </div>
+                            <div class="comparison-image after-image">
+                                <img src="./图片16.webp" alt="High quality hero image" />
+                                <span class="image-label">修复后
+                                </span>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-line"></div>
+                                <div class="slider-handle">
+                                    <div class="slider-button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcement Banner -->
+    <section class="announcement">
+        <div class="announcement-content">
+            <span class="announcement-icon">🚀</span>
+            现在可在以下平台体验我们最新模型的高速、高性能图像修复服务：
+<a href="https://supir.suppixel.ai" target="_blank" rel="noopener noreferrer">supir.suppixel.ai</a> 和
+            <a href="https://www.suppixel.cn" target="_blank" rel="noopener noreferrer">www.suppixel.cn</a>
+
+
+        </div>
+    </section>
+
+    <!-- Video Demo Section - 新增位置 -->
+    <section class="video-section">
+        <div class="content-container">
+            <div class="demo-container">
+                <div class="demo-header">
+                    <h3>HYPIR：融合扩散模型与GAN的高效图像修复新范式
+
+                    </h3>
+                    
+                </div>
+                <div class="video-demo-container">
+                    <div class="video-demo">
+                        <iframe 
+                            src="https://www.youtube.com/embed/M-E1kr0fgZk?autoplay=1&mute=1&loop=1&controls=1&playlist=M-E1kr0fgZk" 
+                            frameborder="0" 
+                            allow="autoplay; encrypted-media" 
+                            allowfullscreen>
+                        </iframe>
+                        
+                    </div>
+                </div>
+                <!-- 修改视频提示文字 -->
+                <div class="video-notice">
+                    <br>
+                    <p>相同视频可查看
+                        <a href="https://www.bilibili.com/video/BV1yk8gz8Ee8/" target="_blank" rel="noopener noreferrer">Bilibili</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="content-container">
+            <!-- Technical Description -->
+            <div class="tech-section tech-section-styled">
+                <div class="feature-content">
+                    <h3 class="feature-title">
+                        老照片修复示例
+
+                    </h3>
+                    
+                </div>
+                <div class="feature-demo">
+                    <div class="demo-comparison">
+                        <div class="image-comparison" data-comparison="tech">
+                            <div class="comparison-image before-image">
+                                <img src="./图片19.webp" alt="Low quality technical image" />
+                                <span class="image-label">输入的低质量图片
+                                </span>
+                            </div>
+                            <div class="comparison-image after-image">
+                                <img src="./图片20.webp" alt="High quality technical image" />
+                                <span class="image-label">HYPIR 的修复结果
+                                </span>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-line"></div>
+                                <div class="slider-handle">
+                                    <div class="slider-button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+                <!-- Face Enhancement -->
+                <div class="tech-section tech-section-styled">
+                    <div class="feature-content">
+                        <h3 class="feature-title">超高分辨率提升
+                        </h3>
+                        <p class="feature-description">
+
+                        </p>
+                    </div>
+                    <div class="feature-demo">
+                        <div class="demo-comparison">
+                            <div class="image-comparison" data-comparison="feature2">
+                                <div class="comparison-image before-image">
+                                    <img src="./图片5.webp" alt="Pixelated face image" />
+                                    <span class="image-label">994 x 720</span>
+                                </div>
+                                <div class="comparison-image after-image">
+                                    <img src="./图片6.webp" alt="Sharp face image" />
+                                    <span class="image-label">7952 x 5760</span>
+                                </div>
+                                <div class="comparison-slider">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animal Restoration -->
+                <div class="tech-section tech-section-styled">
+                    <div class="feature-content">
+                        <h3 class="feature-title">文本高保真
+                        </h3>
+                        <p class="feature-description">
+
+                        </p>
+                    </div>
+                    <div class="feature-demo">
+                        <div class="demo-comparison">
+                            <div class="image-comparison" data-comparison="feature3">
+                                <div class="comparison-image before-image">
+                                    <img src="./图片7.webp" alt="Noisy animal image" />
+                                    <span class="image-label">输入的低质量图片
+                                    </span>
+                                </div>
+                                <div class="comparison-image after-image">
+                                    <img src="./图片8.webp" alt="Clear animal image" />
+                                    <span class="image-label">HYPIR 的修复结果
+                                    </span>
+                                </div>
+                                <div class="comparison-slider">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaming Enhancement -->
+                <div class="tech-section tech-section-styled">
+                    <div class="feature-content">
+                        <h3 class="feature-title">提示词修改画面
+
+                        </h3>
+                        <p class="feature-description">
+
+                        </p>
+                    </div>
+                    <div class="feature-demo">
+                        <div class="demo-comparison">
+                            <div class="image-comparison" data-comparison="feature4">
+                                <div class="comparison-image before-image">
+                                    <img src="./图片17.webp" alt="Low resolution game image" />
+                                    <span class="image-label">覆盖冰雪的岩石
+
+                                    </span>
+                                </div>
+                                <div class="comparison-image after-image">
+                                    <img src="./图片18.webp" alt="High resolution game image" />
+                                    <span class="image-label">海滨城镇，白色房屋
+
+                                    </span>
+                                </div>
+                                <div class="comparison-slider">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cinematic Restoration -->
+                <div class="tech-section tech-section-styled">
+                    <div class="feature-content">
+                        <h3 class="feature-title">纹理锐度可调节
+                        </h3>
+                        <p class="feature-description">
+
+                        </p>
+                    </div>
+                    <div class="feature-demo">
+                        <div class="demo-comparison">
+                            <div class="image-comparison" data-comparison="feature5">
+                                <div class="comparison-image before-image">
+                                    <img src="./图片23.webp" alt="Distorted film image" />
+                                    <span class="image-label">原始输入
+                                    </span>
+                                </div>
+                                <div class="comparison-image after-image">
+                                    <img src="./图片24.webp" alt="Restored film image" />
+                                    <span class="image-label">可调节的修复结果
+                                    </span>
+                                </div>
+                                <div class="comparison-slider">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- 新增对比图组 -->
+            <div class="tech-section tech-section-styled">
+                <div class="feature-content">
+                    <h3 class="feature-title">AI生成与高保真的平衡
+                    </h3>
+                    <p class="feature-description">
+                        
+                    </p>
+                </div>
+                <div class="feature-demo">
+                    <div class="demo-comparison">
+                        <div class="demo-comparison">
+                            <div class="image-comparison" data-comparison="feature6">
+                                <div class="comparison-image before-image">
+                                    <img src="./图片21.webp" alt="Original image" />
+                                    <span class="image-label">原始输入
+
+                                    </span>
+                                </div>
+                                <div class="comparison-image after-image">
+                                    <img src="./图片22.webp" alt="Enhanced image" />
+                                    <span class="image-label">可调节的修复结果
+
+                                    </span>
+                                </div>
+                                <div class="comparison-slider">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <div class="slider-button">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">HYPIR</span>
+                        <p class="footer-tagline">XPixel Group</p>
+                    </div>
+                    <p class="footer-description">
+                        研发，凭借先进的AI大模型技术，开启图像修复新时代。
+
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/XPixelGroup/HYPIR" class="social-link">GitHub</a>
+                        <a href="https://x.com/SupPixelAI" class="social-link">Twitter</a>
+                        <a href="https://www.linkedin.com/company/suppixel-ai" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">产品</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://.suppixel.ai/home">suppixel.ai</a></li>
+                        <li><a href="https://www.suppixel.cn/home">suppixel.cn</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/chrislian/hypir.github.io/releases/tag/paper/HYPIR.pdf">论文</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">团队</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://xpixel.group/">团队介绍</a></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © 2024 XPixel Group. All rights reserved.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
